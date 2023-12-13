@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,6 +15,8 @@ public class Main {
         System.out.println(Pushkin.getNameAuthor() + " " + Pushkin.getSurnameAuthor() + " - "+ evgeniuOnegin.getName() + ", " + evgeniuOnegin.getPublisherYear());
         System.out.println(Tolstoy.getNameAuthor() + " " + Tolstoy.getSurnameAuthor() + " - " + voinaMir.getName() + ", " + voinaMir.getPublisherYear());
 
+        System.out.println(voinaMir);
 
+        System.out.println(Pushkin.equals(evgeniuOnegin));
     }
 }
