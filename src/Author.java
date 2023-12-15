@@ -21,6 +21,22 @@ public class Author {
     public int hashCode() {
         return Objects.hash(nameAuthor, surnameAuthor);
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "nameAuthor='" + nameAuthor + '\'' +
+                ", surnameAuthor='" + surnameAuthor + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(nameAuthor, author.nameAuthor) && Objects.equals(surnameAuthor, author.surnameAuthor);
+    }
 }
 
 

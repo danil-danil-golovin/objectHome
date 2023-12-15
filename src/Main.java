@@ -17,6 +17,6 @@ public class Main {
 
         System.out.println(voinaMir);
 
-        System.out.println(Pushkin.equals(evgeniuOnegin));
+        System.out.println(Pushkin.equals(Tolstoy));
     }
 }
